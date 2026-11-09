@@ -1,0 +1,23 @@
+name: LogCam
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  LogCam:
+    type: application
+    platform: iOS
+    sources: [LogCam]
+    info:
+      path: LogCam/Info.plist
+      properties:
+        CFBundleDisplayName: LogCam
+        NSCameraUsageDescription: Record video
+        NSMicrophoneUsageDescription: Record audio
+        NSPhotoLibraryAddUsageDescription: Save recordings
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.logcam
+        SWIFT_VERSION: "5.0"
